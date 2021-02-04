@@ -1,0 +1,50 @@
+<div id="diy">
+	<div id="layout">
+		<div id="default-layout" class="default-diy">
+			<div id="layout-container">
+				<div class="header px-6 justify-end">
+					<a href="/author" class="absolute left-0">
+						<img id="logo" alt="LOGO" src="<%= theme.logo %>" class="w-12 z-50 transition cursor-pointer ml-6"
+						/>
+					</a>
+					<div id="pc" class="relative">
+						<ul class="menu hide none-active-articles">
+							<%- partial( '_partial/zujian/caidan') %>
+						</ul>
+					</div>
+					<%- partial( '_partial/zujian/pecaidan') %>
+				</div>
+				<div class="scroll-area" style="animation: none">
+					<div class="p-6 md:p-8 lg:p-10 transition">
+						<ul class="creation-list">
+							<% page.posts.each(function (post) { %>
+								<li class="creation-item lg-radius base-shadow">
+									<div style="height: 17rem;">
+										<a href="<%- url_for(post.path) %>">
+											<img src="<%= post.img %>" alt="封面图片" class="cover-img w-full h-full object-cover"
+											/>
+											<div class="absolute bottom-0 w-full px-3 py-2">
+												<div class="relative z-50 flex items-center justify-between" style="animation: sport .567s;">
+													<h3 class="font-bold truncate">
+														<%=post.title %>
+													</h3>
+													<ul class="flex justify-end items-center">
+														<li title="<%= post.title %>" class="ml-1 text-lg cursor-pointer">
+															<%=post.ico %>
+														</li>
+													</ul>
+												</div>
+												<div class="absolute top-0 left-0 z-40 w-full h-full bg-white opacity-75">
+												</div>
+											</div>
+										</a>
+									</div>
+								</li>
+							<% }) %>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

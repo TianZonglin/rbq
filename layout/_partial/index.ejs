@@ -1,0 +1,44 @@
+<div id="diy">
+	<div id="layout">
+		<div id="default-layout" class="default-diy">
+			<div id="layout-container">
+				<div class="header px-6 justify-end">
+					<a href="/author" class="absolute left-0">
+						<img id="logo" alt="LOGO" src="<%= theme.logo %>" class="w-12 z-50 transition cursor-pointer ml-6"
+						/>
+					</a>
+					<div id="pc" class="relative">
+						<ul class="menu hide none-active-home">
+							<%- partial( '_partial/zujian/caidan') %>
+						</ul>
+					</div>
+					<%- partial( '_partial/zujian/pecaidan') %>
+				</div>
+				<div class="scroll-area" style="overflow: hidden">
+					<div class="index">
+						<div class="py-10 flex justify-between items-center">
+							<div class="flex flex-col justify-center xs:items-center sm:items-start">
+								<p class="text-gray-700 xs:text-xl sm:text-2xl md:text-3xl font-bold xs:text-center sm:text-left whitespace-pre-line">
+									<%= theme.homewz1 %>
+								</p>
+								<p class="mt-4 mb-10 text-gray-600 text-sm xs:text-center sm:text-left sm:whitespace-pre-line">
+									<%= theme.homewz2 %><br/><br/><%= theme.homewz3 %>
+								</p>
+								<div>
+									<a href="/author">
+										<button type="button" class="ns-button block text-gray-100 md-radius transition cursor-pointer large ns-button--primary">
+											<%= theme.homebutton %>
+										</button>
+									</a>
+								</div>
+							</div>
+							<img src="<%= theme.hometupian %>" alt="首页图片" class="cover" />
+						</div>
+						<%- partial( '_partial/zujian/zujian1') %>
+					</div>
+				</div>
+				<%- partial( '_partial/zujian/lamuleimu') %>
+			</div>
+		</div>
+	</div>
+</div>

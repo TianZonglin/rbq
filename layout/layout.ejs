@@ -1,0 +1,17 @@
+<%- partial('_partial/head') %>
+   <body>
+     <%- body %>
+   </body>
+   <script type="text/javascript">
+function clickshow(pecd){
+    var _obj = document.getElementById(pecd);
+    if(_obj.style.display == 'block'){
+        _obj.style.display='none';
+    }else {
+        _obj.style.display='block';
+    }
+}
+</script>
+<script src="https://cdn.staticfile.org/instantclick/3.1.0/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+</html>

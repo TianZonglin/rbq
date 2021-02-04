@@ -1,0 +1,46 @@
+<div id="diy">
+	<div id="layout">
+		<div id="default-layout" class="default-diy">
+			<div id="layout-container">
+				<div class="header px-6 justify-end">
+					<a href="/author" class="absolute left-0">
+						<img id="logo" alt="LOGO" src="<%= theme.logo %>" class="w-12 z-50 transition cursor-pointer ml-6"
+						/>
+					</a>
+					<div id="pc" class="relative">
+						<ul class="menu hide none-active-wzgd">
+							<%- partial( '_partial/zujian/caidan') %>
+						</ul>
+					</div>
+					<%- partial( '_partial/zujian/pecaidan') %>
+				</div>
+				<div class="scroll-area">
+					<div class="index">
+						<div class="categories site">
+							<%- list_categories({ show_count: true, style: "unordered list", class:
+							"categories li", separator: "" }) %>
+						</div>
+						<div class="tagcloud site">
+							<%- list_tags({ show_count: true, style: "unordered list", class:
+							"tagcloud li", separator: "" }) %>
+						</div>
+						<div id="spimes-archives">
+							<% site.posts.each(function (post) { %>
+								<li class="list-archive-day">
+									<a href="<%- url_for(post.path) %>">
+										<div class="toggle">
+										</div>
+										<%=post.title %>
+									</a>
+								</li>
+								<% }) %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	@media (max-width:640px){ .index { margin-right: 16px; } }
+</style>

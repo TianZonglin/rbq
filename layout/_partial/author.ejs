@@ -1,0 +1,71 @@
+<div id="diy">
+	<div id="layout">
+		<div id="default-layout" class="default-diy">
+			<div id="layout-container">
+				<div class="header px-6 justify-end">
+					<a href="/author" class="absolute left-0">
+						<img id="logo" alt="LOGO" src="<%= theme.logo %>" class="w-12 z-50 transition cursor-pointer ml-6"
+						/>
+					</a>
+					<div id="pc" class="relative">
+						<ul class="menu hide none-active-about">
+							<%- partial( '_partial/zujian/caidan') %>
+						</ul>
+					</div>
+					<%- partial( '_partial/zujian/pecaidan') %>
+				</div>
+				<div class="scroll-area" style="overflow: hidden">
+					<div class="index">
+						<div class="py-10 flex justify-between items-center">
+							<div class="flex flex-col justify-center xs:items-center sm:items-start"
+							style=" -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; ">
+								<div class="avatar">
+									<img src="<%= theme.avatar %>" alt="<%= config.author %>">
+								</div>
+								<div id="spimes-archives" style="display: block">
+									<li class="list-archive-day">
+										<a href="#">
+											<div class="toggle">
+											</div>
+											要成为王的男孩子
+										</a>
+									</li>
+									<li class="list-archive-day">
+										<a href="#">
+											<div class="toggle">
+											</div>
+											性别不重要 ( 碎碎念 )
+										</a>
+									</li>
+									<li class="list-archive-day">
+										<a href="#">
+											<div class="toggle">
+											</div>
+											希望可以养一孜可爱的猫猫
+										</a>
+									</li>
+								</div>
+								<div class="lxfs" style="margin-top: 1rem">
+									<a href="mailto:2020377497@qq.com">
+										<button type="button" class="ns-button block text-gray-100 md-radius transition cursor-pointer large ns-button--primary">
+											需要联系我吗 ?
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<%- partial( '_partial/zujian/zujian2') %>
+					</div>
+					<%- partial( '_partial/zujian/waves') %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	@media (max-width:640px){.lxfs{display:none} .toggle{top:-1.5px!important}
+	} @media (min-width:640px){.flex-col{-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+	} .flex{width:100%} .avatar img{box-shadow:2px 2px 3px #e1e1e1;width:120px;height:120px;border-radius:50%}
+	#spimes-archives{margin-left:3rem;margin-right:3rem;padding:0 0 8px} #layout-container{box-shadow:0
+	1px 3px 1px #e5edfc}
+</style>
