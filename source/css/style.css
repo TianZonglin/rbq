@@ -5,8 +5,7 @@
 @media (max-width:640px){::-webkit-scrollbar{width:0;height:1px}
 ::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.2);background:rgba(0,0,0,.2)}
 .justify-end{border-radius:0!important}
-}@font-face{font-family:web;src:url(https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/mkwtyt.woff2)}
-body{font-family:web}
+}
 .cursor-pointer,a,button,input,select,textarea,transition{cursor:url(https://cdn.jsdelivr.net/gh/emeomo/vieu/S2.cur),auto!important}
 body,input[disabled],input[readonly],select[disabled],select[readonly],textarea[disabled]{cursor:url(https://cdn.jsdelivr.net/gh/emeomo/vieu/S1.cur),auto}
 html{min-height:100vh;font-family:BASE;-ms-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;line-height:1.15;-webkit-text-size-adjust:100%}
